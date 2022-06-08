@@ -12,14 +12,16 @@ namespace ensyuu_kome2
         {
             for (int i = 1; i <= 4; i++)//*が増えるループを5回
             {
+                string m = "    ";
                 string n = "*";
-                string str = string.Concat(Enumerable.Repeat("**", i));//ループの回数だけ**増加
+                string o = string.Concat(Enumerable.Repeat("**", i));//ループの回数だけ**増加
                 if (i == 1)//1行目は*一つから始めたい
                 {
-                    Console.WriteLine(n);
+                    Console.WriteLine(m+n);
                 }
-                Console.WriteLine(n+str.ToString());//奇数にするため+nをした
-            }
+                m = m.Remove(0, i);//文字列mの最初からi番目の文字を削除
+                Console.WriteLine(m+n+o.ToString());//奇数にするため+nをした
+                }
         }
     }
 }
