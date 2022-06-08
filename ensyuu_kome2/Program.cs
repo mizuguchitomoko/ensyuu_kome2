@@ -21,7 +21,7 @@ namespace ensyuu_kome2
                 }
                 m = m.Remove(0, i);//文字列mの最初からi番目の文字を削除
                 Console.WriteLine(m+n+o.ToString());//奇数にするため+nをした
-                }
+            }
         }
     }
 }
